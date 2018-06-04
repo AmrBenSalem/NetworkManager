@@ -1,0 +1,2 @@
+snmpwalk -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 .1.3.6.1.4.1.9.9.96.1.1.1.1.10.$2 
+

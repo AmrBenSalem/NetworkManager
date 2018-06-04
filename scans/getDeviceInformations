@@ -1,0 +1,14 @@
+#!/bin/bash
+
+current_ip="/mnt/hgfs/NetworkManager/scans/current_ip";
+if  grep -q "." $current_ip 
+	then
+echo "$(grep . $current_ip)"> $current_ip ;
+while read LINE;do
+#do sed -n "$LINE"p "$ipfile" >> "$finalfile" 
+/mnt/hgfs/NetworkManager/snmp_files/get_all_informations $LINE $1
+done < $current_ip
+fi
+#echo "$(tail -n +2 $finalfile)" > $finalfile;
+
+# echo "$(grep . $system_name)"> $system_name;

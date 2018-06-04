@@ -1,0 +1,1 @@
+snmpget -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 system.sysName.0 > /mnt/hgfs/NetworkManager/scans/snmp_verification_ip

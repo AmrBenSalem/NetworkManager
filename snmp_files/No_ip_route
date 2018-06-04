@@ -1,0 +1,2 @@
+conf t
+no ip route IP MASK IP

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+nmap -n -sP $1  > /mnt/hgfs/NetworkManager/scans/instant/scan.txt
+# echo "" > /mnt/hgfs/NetworkManager/scans/snmp_verification_ip
+if  grep -q "(0 hosts up)" /mnt/hgfs/NetworkManager/scans/instant/scan.txt
+	then 
+	echo 'a';
+
+else
+cat /mnt/hgfs/NetworkManager/scans/instant/scan.txt | grep "Nmap scan report for" | cut -d " " -f5 | xargs -I {} echo {} $1 >>  /mnt/hgfs/NetworkManager/scans/instant/scanip.txt
+# cd /mnt/hgfs/NetworkManager/scans
+# ./script
+fi

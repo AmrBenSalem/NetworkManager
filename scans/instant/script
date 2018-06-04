@@ -1,0 +1,27 @@
+#!/bin/bash
+
+finalfile="/mnt/hgfs/NetworkManager/scans/instant/finalip.txt"
+failedfile="/mnt/hgfs/NetworkManager/scans/instant/failedip.txt"
+# getinfo="/mnt/hgfs/NetworkManager/snmp_files/get_all_informations"
+ip_verif="/mnt/hgfs/NetworkManager/scans/instant/snmp_verification_ip"
+# system_name="/mnt/hgfs/NetworkManager/scans/system_name"
+scanip="/mnt/hgfs/NetworkManager/scans/instant/scanip.txt";
+
+# while read LINE;do
+#  #do sed -n "$LINE"p "$ipfile" >> "$finalfile"
+#  echo "" > $ip_verif
+#  ./get_informations $LINE
+#  echo "$(grep . $ip_verif)"> $ip_verif ;
+ 	if   grep -q "sysName.0" $ip_verif 
+ 		then
+ 			echo "$1 $2" >> $finalfile
+ 	else
+ 			echo "$1 $2" >> $failedfile
+
+	fi
+#   done < $ipfile
+
+# #echo "$(tail -n +2 $finalfile)" > $finalfile;
+# echo "$(grep . $finalfile)"> $finalfile ;
+echo "$(grep . $scanip)"> $scanip ;
+echo "$(grep . $failedfile)"> $failedfile ;

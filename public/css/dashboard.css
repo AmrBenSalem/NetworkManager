@@ -1,0 +1,423 @@
+
+.red {
+	background: red;
+}
+
+.blue {
+	background: blue;
+}
+
+
+.nav-margin {
+	margin-bottom: 0;
+}
+
+.row-padding {
+	padding-top   : 0;
+	padding-bottom: 0;
+}
+
+.custom-nav {
+	position     :fixed;
+	height       : 100%;
+	padding-top: 50px;
+}
+
+body {
+	width : 100%;
+	height: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding        : 0;
+	margin         : 0;
+}
+
+.navright {
+    right : 20px;
+}
+
+.hidden-y {
+	overflow-y: hidden;
+}
+
+.no-left {
+	padding-left: 0;
+}
+
+.navimage {
+	width: 80px;
+}
+
+.navlink {
+
+}
+
+.navlink :hover {
+	-moz-transition   :all 0.6s ease;
+	-webkit-transition:all 0.6s ease;
+	-o-transition     :all 0.6s ease;
+	-ms-transition    :all 0.6s ease;
+	transition        :all 0.2s ease-out;
+	filter            :opacity(30%);
+}
+
+.last-img {
+	padding-bottom: 500px;
+}
+
+body {
+	background :white;
+}
+
+
+.maxheight {
+	height: 100%;
+}
+
+.vertical-center {
+	/*min-height : 100%;*/
+/*	min-height : 89vh;*/
+	/*min-width  : 100%;*/
+	/*min-width  : 88vh;*/
+	display    : flex;
+	align-items: center;
+}
+
+
+.padding-top {
+	padding-top: 50px;
+}
+
+.padding-top-temp {
+	padding-top: 80px;
+}
+
+.margin-top-panel {
+	margin-top: 36px;
+}
+
+.red-border {
+	border-color: red;
+}
+
+
+.checkbox-inline {
+	padding-right: 20px ;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.bigdots {
+	font-size: 200%;
+	display: inline;
+}
+
+
+.custom-toolbar-item {
+	height: 20px;
+	width: 20px;
+}
+
+.button-custom-toolbar {
+	background-color:transparent;
+	 border-color:transparent;
+	 padding : 0px;
+}
+
+.zero-padding {
+	padding : 0px;
+}
+
+.form-display-inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.inline-self {
+	display: inline;
+}
+
+#setting-icon {
+	width: 20px;
+	height: 20px;
+	transition: all 0.7s ease-out 0s; 
+	}
+
+#notifications-icon {
+	width: 20px;
+	height: 20px;
+	}
+
+
+#setting-icon:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.7s ease-out 0s;
+}
+
+.modal-height {
+	display: flex;
+}
+
+#padding-title {
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+#padding-x {
+	padding-top: 15px;
+	padding-right: 15px;
+}
+
+.padding-content {
+	padding-top: 15px;
+}
+
+.float-right {
+	float:right;
+}
+
+.no-padding-right{
+	padding-right: 0px;
+}
+
+.modal .modal-dialog { width: 700px; }
+
+
+#networkstatus {
+	display: inline;
+}
+
+
+
+
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:1em;
+    position:relative
+}
+.tree ul ul {
+    margin-left:.5em
+}
+.tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    border-left:1px solid
+}
+.tree li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    color:#369;
+    font-weight:700;
+    position:relative
+}
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:10px;
+    height:0;
+    border-top:1px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:1em;
+    left:0
+}
+.tree ul li:last-child:before {
+    background:#f5f5f5;
+    height:auto;
+    top:1em;
+    bottom:0
+}
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#369;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#369;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+
+.status-table {
+	padding-top: 5px;
+}
+
+#scan-table {
+	padding-right: 50px;
+}
+
+#ping-table {
+	padding-right: 50px;
+}
+
+.li-height {
+	height: 50px;
+}
+
+.padding-top-text {
+	padding-top: 15px;
+	padding-right: 15px;
+}
+
+.no-padding-top {
+	padding-top: 0px;
+}
+
+.center-td {
+	text-align: center;
+}
+
+#device-table tbody tr:hover td, .table-hover tbody tr:hover th {
+	cursor:pointer;
+  	background-color: #ffffff;
+}
+
+.modal-static { 
+    position: fixed;
+    top: 50% !important; 
+    left: 50% !important; 
+    margin-top: -100px;  
+    margin-left: -100px; 
+    overflow: visible !important;
+}
+.modal-static,
+.modal-static .modal-dialog,
+.modal-static .modal-content {
+    width: 200px; 
+    height: 230px; 
+}
+.modal-static .modal-dialog,
+.modal-static .modal-content {
+    padding: 0 !important; 
+    margin: 0 !important;
+}
+.modal-static .modal-content .icon {
+}
+
+.selectpaddingtop {
+	padding-top: 2px;
+}
+
+.padding-notifications {
+	padding-right: 18px;
+}
+
+.minus-sign {
+  background-image: url("/images/minus-icon.png");
+}
+
+.plus-sign {
+  background-image: url("/images/plus-icon.png");
+}
+
+
+
+/*devices*/
+
+.results tr[visible='false'],
+.no-result{
+  display:none;
+}
+
+.results tr[visible='true']{
+  display:table-row;
+}
+
+.counter{
+  padding:8px; 
+  color:#ccc;
+}
+
+
+
+
+.well-margin-top {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.popover{
+	width : 200%;
+ }
+
+.pull-right {
+	margin-bottom: 5px;
+}
+
+
+.sizeblock {
+	font-size: 110%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.width-btn {
+	width : 200px;
+}
+
+
+#first-panel {
+	margin-right: 20px;
+	min-height: 300px;
+	max-height: 500px;
+}
+
+
+#or {
+	margin-bottom: 25px;
+	margin-top : 25px;
+}
+
+#second-panel {
+	margin-right: 20px;
+	min-height: 200px;
+	max-height: 300px;
+}
+
+.test {
+	position : relative;
+	top : 7px;
+}
+
+.updown {
+	position : relative;
+	bottom : 3px;
+}
+
+
+
+

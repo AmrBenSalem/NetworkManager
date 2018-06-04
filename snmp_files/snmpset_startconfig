@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+
+
+snmpset -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 1.3.6.1.4.1.9.9.96.1.1.1.1.3.$3 i 1
+
+snmpset -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 1.3.6.1.4.1.9.9.96.1.1.1.1.4.$3 i 3
+
+snmpset -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 1.3.6.1.4.1.9.9.96.1.1.1.1.5.$3 a $4
+
+snmpset -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 1.3.6.1.4.1.9.9.96.1.1.1.1.6.$3 s $2
+
+snmpset -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 1.3.6.1.4.1.9.9.96.1.1.1.1.14.$3 i 1

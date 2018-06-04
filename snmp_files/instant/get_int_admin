@@ -1,0 +1,1 @@
+snmpget -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 ifAdminStatus.$2 | grep "INTEGER: " | sed 's/^.*: //' | cut -d '(' -f1

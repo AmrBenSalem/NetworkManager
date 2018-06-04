@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat /mnt/hgfs/NetworkManager/snmp_files/$1 | grep -oP '\(\K[^)]+' > /mnt/hgfs/NetworkManager/snmp_files/list_parentheses
+
+

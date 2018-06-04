@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cat $1 | grep -oE '\b[[:upper:]]+\b' > /mnt/hgfs/NetworkManager/snmp_files/list_uppercase
+
+

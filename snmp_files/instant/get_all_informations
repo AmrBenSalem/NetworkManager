@@ -1,0 +1,8 @@
+#!/bin/bash
+
+snmpget -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 system.sysDescr.0 > /mnt/hgfs/NetworkManager/snmp_files/instant/sysDescr_tmp
+echo 'sysref:'"$(cat /mnt/hgfs/NetworkManager/snmp_files/instant/sysDescr_tmp | cut -d "," -f2 | cut -d " " -f2 | head -1)" > /mnt/hgfs/NetworkManager/snmp_files/instant/informations_tmp
+echo 'sysname:'"$(snmpget -v 3 -u authbiat -l authPriv -a SHA -x AES -A biatbiat -X biatbiat $1 system.sysName.0 | cut -d " " -f4 | cut -d "." -f1)" >> /mnt/hgfs/NetworkManager/snmp_files/instant/informations_tmp
+echo 'syssoftware:'"$(cat /mnt/hgfs/NetworkManager/snmp_files/instant/sysDescr_tmp | cut -d "," -f2 | cut -d "(" -f2 | cut -d ")" -f1 | head -1)" >> /mnt/hgfs/NetworkManager/snmp_files/instant/informations_tmp
+echo 'sysversion:'"$(cat /mnt/hgfs/NetworkManager/snmp_files/instant/sysDescr_tmp | cut -d "," -f3 | cut -d " " -f3 | head -1)" >> /mnt/hgfs/NetworkManager/snmp_files/instant/informations_tmp
+

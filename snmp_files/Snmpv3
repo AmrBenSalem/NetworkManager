@@ -1,0 +1,2 @@
+conf t
+snmp-server group [GROUPNAME (Group name) {v1 | v2c | v3{auth | noauth | priv}}] [read readview] [write writeview] [notify notifyview] [access access-list]
